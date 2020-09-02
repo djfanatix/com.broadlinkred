@@ -10,6 +10,7 @@ Use [Homey](https://www.athom.com/) together with [Broadlink devices](http://www
   This app is only for the 5F36 version (red) 
 
 # Soon to be supported devices
+* [RM4] can be added if you enable all devices in the config of the app.
 
 
 # Device configuration

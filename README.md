@@ -57,7 +57,8 @@ still some things to do:
 
 
 # Version
-
+* 1.0.2<br>
+experimental: support for RM4 mini
 * 1.0.1<br>
 Bugfixes
 * 1.0.0<br>
