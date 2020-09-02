@@ -5,20 +5,59 @@ Use [Homey](https://www.athom.com/) together with [Broadlink devices](http://www
 
 # Supported devices
 
-
+* [RM3 mini](http://www.ibroadlink.com/rmMini3/)
   The RM3 Mini is a wifi to IR (infrared) device. It can learn IR commands and transmit them.
+  This app is only for the 5F36 version (red) 
 
-# To be supported devices
+# Soon to be supported devices
+* [RM4] can be added if you enable all devices in the config of the app.
 
 
-# Debug and Error log
+# Device configuration
 
-In the application settings, there are 2 flags to enable logging: Debug and Sentry.
-- Debug logging dumps messages via the console log. This only works if the app is 
-  started in debug mode from a PC (using 'athom app run')
-- Sentry.IO is an error tracking system, which will create an error report for every
-  message send to it. Use this only if you want to report an issue, and can reproduce
-  it.
+The devices need to be configured before they can be paired with Homey.
+Configuration is done using the app from Broadlink. 
+The device should be disconnected from the cloud, otherwise Homey cannot access the device!
+
+- Hold the reset button 5s on your broadlink device until the (blue) light flashes
+- In the Broadlink app (iOS / Android) Go through the “Add Device” steps
+- When you reach the step to add the device to a room - quit the app
+
+# Pairing
+
+You can pair a Broadlink device the same way other devices are added to Homey.
+You will need the IP address of your device in order to pair it. 
+This can usually be retrieved from
+your WiFi router.
+
+For good performance, give the device a static IP address
+
+# Usage
+
+Once a RM-Mini is connected, it can start learning commands.
+This is done by pressing the 'learn' button (for IR or RF) in the mobile card of the paired device.
+On the device, a LED will turn on indicating it is in learning mode, and you can press a button on
+a IR/RF Remote control.
+The command will be added to the device settings in Homey. In the device settings menu, you can
+give the command a more logical name, or delete it by clearing its name.
+Currently 20 to 30 commands are supported in the settings page of each device.
+It is not possible at this moment to change the order of the commands in the settings page.
+
+
+
+** Using learned commands**
+
+InfraRed commands can now be used in an identical way.
+All commands the RM has learned, are available only in flows.
+When creating a flow, you can use the command (or any command) as a trigger 
+to start the flow.
+In the 'then' part, you can select your RM device, and select the 
+command from the list of available commands.
+
+If you like to use a button to send a command, you can create a Virtual Device, 
+which will trigger a flow (as described above).
+
+
 
 # Reference
 
@@ -35,25 +74,6 @@ See:
 Protocol:
 - https://blog.ipsumdomus.com/broadlink-smart-home-devices-complete-protocol-hack-bc0b4b397af1
 
-# NodeJS modules
-
-requires the following NodeJS modules
-- dgram
-- crc
-
-# app.json
-
-app.json is split in serveral files (driver.compose.json et all).
-In order to create a full app.json, open a commandline (i.e. terminal):
-
-	> cd com.broadlink
-	> athom app validate
- 
-
-# To Do
-
-still some things to do:
-- add supported devices (see com.broadlink/lib/DeviceInfo for list)
 
 
 # Version
