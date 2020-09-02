@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "sending timeout": "Timeout while sending message to device: device did not respond in time",
+    "decrypt_payload": "Cannot decrypt response: no payload.",
+    "decrypt_keylength": "Cannot decrypt response: invalid key length.",
+    "discover_local_ip": "Cannot discover devices: local IP address unknown.",
+    "save_settings_nocmd": "Cannot save changes: command  __cmd__ is not known yet",
+    "save_settings_exist": "Cannot save changes: command  __cmd__ already exists",
+    "sensor_check": "Cannot get sensor values from device",
+    "invalid_response": "Invalid response from device",
+    "invalid_sensor_limits": "Invalid sensor limits",
+    "invalid_schedule_time": "Invalid schedule time",
+    "no_key_detected": "no key detected"
+  },
+  "pair": {
+    "title": "Pair Broadlink Device",
+    "intro": "Configure the device with the e-Control app on a smartphone.<br>Get the IP address from your wifi router.",
+	"cancel": "Cancel",
+	"add": "Add",
+	"address": "IP address",
+	"error_no_discover": "No device discovered. Did you switch it on, and is it connectect to your WiFi network ?",
+	"found_another": "Found another device: __dev__ (__type__)",
+	"invalid_ipaddress": "Invalid IP address",
+	"discovering": "Discovering device...",
+	"has_sensors":"Has external sensor",
+	"properties":"Properties",
+	"select_device":"Select device",
+	"next":"Next &gt;"
+  },
+  "settings":{
+  	"title": "Broadlink Debug Settings",
+  	"compatinfo": "In compatibility mode, any device found during pairing will be accepted as the selected device type. This means the device paired will be treated as the choosen device type. As a result, not all (if any) of the capablities of the device will work properly",
+  	"compatmode": "Compatibility Mode",
+   	"debuginfo": "Write logging text to console. This is only valid if app is loaded in debug mode.",
+   	"debuglog" : "Log Mode",
+   	"errorreportinfo" : "Error reports using Sentry.IO",
+   	"errorreport" : "Sentry.IO"
+  },
+  "air_quality": {
+    "excellent": "excellent",
+    "good": "good",
+    "normal": "normal",
+    "bad": "bad"
+  },
+  "light_level": {
+    "dark": "dark",
+    "dim": "dim",
+    "normal": "normal",
+    "bright": "bright"
+  },
+  "noise_level": {
+    "quiet": "quiet",
+    "normal": "normal",
+    "noisy": "noisy"
+  },
+  "rf_learn": {
+    "long_press": "keep button pressed",
+    "multi_presses": "press button repeatedly",
+    "done": "stop pressing button"
+  }
+}

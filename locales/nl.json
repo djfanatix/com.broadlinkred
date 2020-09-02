@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "sending timeout": "Kan geen bericht naar apparaat sturen: antwoord niet op tijd ontvangen",
+    "decrypt_payload": "Kan anwoord niet ontsleutelen: geen data in bericht.",
+    "decrypt_keylength": "Kan anwoord niet ontsleutelen: foutive sleutel lengte.",
+    "discover_local_ip": "Kan geen apparaten ontdekken: locaal IP adres is onbekend.",
+    "save_settings_nocmd": "Kan instellingen niet bewaren: commando __cmd__ is nog niet bekend.",
+    "save_settings_exist": "Kan instellingen niet bewaren: commando __cmd__ bestaat al.",
+    "sensor_check": "Kan sensor waarden niet lezen van apparaat",
+    "invalid_response": "ongeldig antwoord van apparaat.",
+    "invalid_sensor_limits": "Ongeldige sensor grenzen.",
+    "invalid_schedule_time": "Ongeldige schema tijd",
+    "no_key_detected": "no toets gedetecteerd"
+  },
+  "pair": {
+    "title": "Broadlink Apparaat Toevoegen",
+    "intro": "Configureer het apparaat met de e-Control app op een smartphone.<br>Zoek dan het IP adres op de WiFi router.",
+	"cancel": "Stop",
+	"add": "Toevoegen",
+	"address": "IP address",
+	"error_no_discover": "Geen apparaat gevonden. Is het apparaat aan, en is het verbonden met het Wifi netwerk ?",
+	"found_another": "Ander apparaat gevonden: __dev__ (__type__)",
+	"invalid_ipaddress": "Ongeldig IP adres",
+	"discovering": "Probeer apparaat te ontdekken...",
+	"has_sensors":"Heeft externe sensor",
+	"properties":"Eigenschappen",
+	"select_device":"Selecteer het apparaat",
+	"next":"Volgende &gt;"
+  },
+  "settings":{
+  	"title": "Broadlink Debug Instellingen",
+  	"compatinfo": "In eenheidsmode, ieder apparaat dat gevonden wordt tijdens paren, zal geaccepteerd worden alsof het van het gewenste type is. Dit betekent dat het geinstalleerde apparaat aangesproken wordt alsof het een apparaat van dat type is. Hierdoor zullen niet alle (of zelfs geen enkele) van zijn mogelijkheden naar behoren werken.",
+   	"compatmode": "Eenheidsmode",
+   	"debuginfo": "Schrijf log teksten naar console. Werkt alleen als app in debug mode is geladen.",
+   	"debuglog" : "Logmode",
+   	"errorreportinfo" : "Foutreporten via Sentry.IO",
+   	"errorreport" : "Sentry.IO"
+  },
+  "air_quality": {
+    "excellent": "uitstekend",
+    "good": "goed",
+    "normal": "normaal",
+    "bad": "slecht"
+  },
+  "light_level": {
+    "dark": "donker",
+    "dim": "schemerig",
+    "normal": "normal",
+    "bright": "helder"
+  },
+  "noise_level": {
+    "quiet": "stil",
+    "normal": "normal",
+    "noisy": "luidruchtig"
+  },
+  "rf_learn": {
+    "long_press": "houd knop ingedrukt",
+    "multi_presses": "druk kort en vaak op knop",
+    "done": "stop met knop indrukken"
+  }
+}
